@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>听和弦练习</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>和弦听音练习</h1>
+
+    <div class="upload-section">
+      <label for="audioUpload">选择音频文件：</label>
+      <input type="file" id="audioUpload" accept="audio/*">
+      <label for="chordInput">输入和弦名称：</label>
+      <input type="text" id="chordInput" placeholder="例如 C Major">
+      <button id="uploadChordButton">上传音频和和弦</button>
+      <div id="chordUploadResult"></div>
+    </div>
+
+    <hr>
+
+    <div class="audio-player">
+      <audio id="chordAudioPlayer" controls>
+        <p>你的浏览器不支持音频播放。</p>
+      </audio>
+    </div>
+
+    <button id="chordPlayButton">播放和弦音频</button>
+
+    <hr>
+
+    <div id="chordInfo">和弦信息将在这里展示</div>
+
+    <a href="index.html" class="button">返回主页</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
