@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>听单音练习</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>单音听音练习</h1>
+
+    <div class="upload-section">
+      <label for="audioUpload">选择音频文件：</label>
+      <input type="file" id="audioUpload" accept="audio/*">
+      <label for="noteInput">输入音符名称：</label>
+      <input type="text" id="noteInput" placeholder="例如 C">
+      <button id="uploadButton">上传音频和音符</button>
+      <div id="uploadResult"></div>
+    </div>
+
+    <hr>
+
+    <div class="audio-player">
+      <audio id="audioPlayer" controls>
+        <p>你的浏览器不支持音频播放。</p>
+      </audio>
+    </div>
+
+    <button id="playButton">播放音频</button>
+
+    <hr>
+
+    <div id="audioInfo">音符信息将在这里展示</div>
+
+    <a href="index.html" class="button">返回主页</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
